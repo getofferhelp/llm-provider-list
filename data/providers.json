@@ -9,30 +9,30 @@
       "models": [
 
         {
-          "id": "claude-3-5-opus-20240229",
+          "id": "claude-3-opus-20240229",
           "name": "Claude 3.5 Opus",
           "contextWindow": 200000,
           "price": {
-            "input": 0.015,
-            "output": 0.075
+            "input": 0.0015,
+            "output": 0.0075
           }
         },
         {
-          "id": "claude-3-5-sonnet-20240229",
+          "id": "claude-3-5-sonnet-20241022",
           "name": "Claude 3.5 Sonnet",
           "contextWindow": 200000,
           "price": {
-            "input": 0.003,
-            "output": 0.015
+            "input": 0.0003,
+            "output": 0.0015
           }
         },
         {
-          "id": "claude-3-7-sonnet",
+          "id": "claude-3-7-sonnet-20250219",
           "name": "Claude 3.7 Sonnet",
           "contextWindow": 100000,
           "price": {
-            "input": 0.008,
-            "output": 0.024
+            "input": 0.0008,
+            "output": 0.0024
           }
         }
       ]
@@ -278,8 +278,8 @@
           "name": "Moonshot V1 8K",
           "contextWindow": 8192,
           "price": {
-            "input": 0.00012,
-            "output": 0.00012
+            "input": 0.0012,
+            "output": 0.0012
           }
         },
         {
@@ -287,8 +287,8 @@
           "name": "Moonshot V1 32K",
           "contextWindow": 32768,
           "price": {
-            "input": 0.00024,
-            "output": 0.00024
+            "input": 0.0024,
+            "output": 0.0024
           }
         },
         {
@@ -296,8 +296,8 @@
           "name": "Moonshot V1 128K",
           "contextWindow": 131072,
           "price": {
-            "input": 0.0006,
-            "output": 0.0006
+            "input": 0.006,
+            "output": 0.006
           }
         }
       ]
