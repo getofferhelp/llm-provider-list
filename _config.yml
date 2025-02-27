@@ -1,4 +1,23 @@
 title: AI Provider List
 description: 一个全面的 AI 模型供应商列表
-theme: jekyll-theme-cayman
-show_downloads: true
+remote_theme: just-the-docs/just-the-docs
+
+# Just the Docs 主题配置
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+
+# 导航相关
+aux_links:
+  "GitHub 仓库":
+    - "https://github.com/getofferhelp/ai-provider-list"
+
+# 页面底部
+footer_content: "由 <a href='https://github.com/getofferhelp'>GetOfferHelp</a> 维护"
+
+# 主题颜色定制
+callouts:
+  note:
+    color: blue
+  warning:
+    color: red

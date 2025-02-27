@@ -5,20 +5,40 @@ try {
   const providersData = JSON.parse(fs.readFileSync('data/providers.json', 'utf8'));
   
   // 生成完整的 README 内容
-  const readmeContent = `# AI Provider List
+  const readmeContent = `---
+layout: default
+title: 首页
+nav_order: 1
+permalink: /
+---
 
-> 一个全面的 AI 模型供应商列表，帮助开发者快速了解和选择合适的 AI 服务。
+# AI Provider List
+{: .fs-9 }
+
+一个全面的 AI 模型供应商列表，帮助开发者快速了解和选择合适的 AI 服务。
+{: .fs-6 .fw-300 }
+
+[开始使用](#支持的供应商){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[GitHub](https://github.com/getofferhelp/ai-provider-list){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+---
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/getofferhelp/ai-provider-list)
 ![GitHub](https://img.shields.io/github/license/getofferhelp/ai-provider-list)
 
 ## 📊 支持的供应商
+{: .d-inline-block }
+
+New
+{: .label .label-green }
 
 下面列出了目前支持的 AI 服务供应商及其模型信息。最后更新时间：${new Date().toISOString().split('T')[0]}
+{: .fs-5 }
 
 | 供应商 | 支持的模型 |
 | :--- | :--- |
 ${providersData.providers.map(p => `| **${p.name}** | ${p.models.map(m => `\`${m.name}\``).join(', ')} |`).join('\n')}
+{: .table-responsive }
 
 ## 🌟 特点
 
@@ -27,6 +47,10 @@ ${providersData.providers.map(p => `| **${p.name}** | ${p.models.map(m => `\`${m
 - 开源维护，社区驱动
 
 ## 🤝 如何贡献
+{: .d-inline-block }
+
+Contributing
+{: .label .label-purple }
 
 我们欢迎任何形式的贡献！参与方式：
 
@@ -41,8 +65,10 @@ ${providersData.providers.map(p => `| **${p.name}** | ${p.models.map(m => `\`${m
 ## 📬 联系我们
 
 如有问题或建议，欢迎：
-- 提交 [Issue](https://github.com/getofferhelp/ai-provider-list/issues)
-- 发起 [Pull Request](https://github.com/getofferhelp/ai-provider-list/pulls)
+{: .fs-5 }
+
+[提交 Issue](https://github.com/getofferhelp/ai-provider-list/issues){: .btn .btn-blue }
+[发起 Pull Request](https://github.com/getofferhelp/ai-provider-list/pulls){: .btn .btn-green }
 `;
 
   // 写入文件
