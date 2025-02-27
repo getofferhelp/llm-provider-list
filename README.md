@@ -33,7 +33,7 @@ New
 | **Claude** | 3 | 200,000 | $0.003/1K - $0.015/1K |
 | **DeepSeek** | 2 | 32,000 | $0.0001/1K - $0.0002/1K |
 | **Gemini** | 4 | 32,000 | $0.00025/1K - $0.0005/1K |
-| **Groq** | 5 | 128,000 | $0.00005/1K - $0.00008/1K |
+| **Groq** | 15 | 128,000 | $0.00004/1K - $0.00004/1K |
 | **Grok** | 1 | 8,192 | $0.0002/1K - $0.0002/1K |
 | **Kimi** | 3 | 131,072 | $0.0001/1K - $0.0001/1K |
 | **Mistral** | 3 | 32,000 | $0.0002/1K - $0.0006/1K |
@@ -138,8 +138,64 @@ New
 - API密钥获取: [点击这里](https://console.groq.com/keys)
 
 
+### DeepSeek R1 Distill LLaMA 70B
+- 模型ID: `deepseek-r1-distill-llama-70b`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.00075/1K tokens
+  - 输出: $0.00099/1K tokens
+
+
+### DeepSeek R1 Distill Qwen 32B
+- 模型ID: `deepseek-r1-distill-qwen-32b`
+- 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.00069/1K tokens
+  - 输出: $0.00069/1K tokens
+
+
+### Qwen 2.5 32B Instruct
+- 模型ID: `qwen-2.5-32b-instruct`
+- 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.00079/1K tokens
+  - 输出: $0.00079/1K tokens
+
+
+### Qwen 2.5 Coder 32B Instruct
+- 模型ID: `qwen-2.5-coder-32b-instruct`
+- 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.00079/1K tokens
+  - 输出: $0.00079/1K tokens
+
+
+### Mistral Saba 24B
+- 模型ID: `mistral-saba-24b`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.00079/1K tokens
+  - 输出: $0.00079/1K tokens
+
+
+### LLaMA 3.2 1B
+- 模型ID: `llama-3.2-1b`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.00004/1K tokens
+  - 输出: $0.00004/1K tokens
+
+
+### LLaMA 3.2 3B
+- 模型ID: `llama-3.2-3b`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.00006/1K tokens
+  - 输出: $0.00006/1K tokens
+
+
 ### LLaMA 3.3 70B Versatile
-- 模型ID: `llama-3-3-70b-versatile`
+- 模型ID: `llama-3.3-70b-versatile`
 - 上下文窗口: 128,000 tokens
 - 价格:
   - 输入: $0.00059/1K tokens
@@ -147,8 +203,24 @@ New
 
 
 ### LLaMA 3.1 8B Instant
-- 模型ID: `llama-3-1-8b-instant`
+- 模型ID: `llama-3.1-8b-instant`
 - 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.00005/1K tokens
+  - 输出: $0.00008/1K tokens
+
+
+### LLaMA 3 70B
+- 模型ID: `llama-3-70b`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.00059/1K tokens
+  - 输出: $0.00079/1K tokens
+
+
+### LLaMA 3 8B
+- 模型ID: `llama-3-8b`
+- 上下文窗口: 8,192 tokens
 - 价格:
   - 输入: $0.00005/1K tokens
   - 输出: $0.00008/1K tokens
@@ -176,6 +248,14 @@ New
 - 价格:
   - 输入: $0.0002/1K tokens
   - 输出: $0.0002/1K tokens
+
+
+### LLaMA 3.3 70B SpecDec
+- 模型ID: `llama-3.3-70b-specdec`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.00059/1K tokens
+  - 输出: $0.00099/1K tokens
 
 ---
 
