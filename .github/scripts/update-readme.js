@@ -4,15 +4,22 @@ try {
   // 读取数据
   const providersData = JSON.parse(fs.readFileSync('data/providers.json', 'utf8'));
   
+  // 添加一个辅助函数来判断供应商使用的货币符号
+  const getCurrencySymbol = (providerId) => {
+    const rmbProviders = ['deepseek', 'kimi', 'qwen'];
+    return rmbProviders.includes(providerId) ? '¥' : '$';
+  };
+
   // 生成供应商详细信息表格
   const providerDetailsTable = providersData.providers.map(provider => {
+    const currencySymbol = getCurrencySymbol(provider.id);
     const modelDetails = provider.models.map(model => `
 ### ${model.name}
 - 模型ID: \`${model.id}\`
 - 上下文窗口: ${model.contextWindow.toLocaleString()} tokens
 - 价格:
-  - 输入: $${(model.price.input * 1000).toFixed(2)}/1M tokens
-  - 输出: $${(model.price.output * 1000).toFixed(2)}/1M tokens
+  - 输入: ${currencySymbol}${(model.price.input * 1000).toFixed(2)}/1M tokens
+  - 输出: ${currencySymbol}${(model.price.output * 1000).toFixed(2)}/1M tokens
 `).join('\n');
 
     return `## ${provider.name}
@@ -22,6 +29,15 @@ try {
 ${modelDetails}
 ---
 `;
+  }).join('\n');
+
+  // 更新概览表格中的价格显示
+  const providersTable = providersData.providers.map(p => {
+    const currencySymbol = getCurrencySymbol(p.id);
+    const maxContext = Math.max(...p.models.map(m => m.contextWindow));
+    const minPrice = Math.min(...p.models.map(m => m.price.input)) * 1000;
+    const minPriceOutput = Math.min(...p.models.map(m => m.price.output)) * 1000;
+    return `| **${p.name}** | ${p.models.length} | ${maxContext.toLocaleString()} | ${currencySymbol}${minPrice.toFixed(2)}/1M - ${currencySymbol}${minPriceOutput.toFixed(2)}/1M |`;
   }).join('\n');
 
   // 生成完整的 README 内容
@@ -57,12 +73,7 @@ New
 
 | 供应商 | 模型数量 | 最大上下文窗口 | 最低价格(输入/输出) |
 | :--- | :---: | :---: | :--- |
-${providersData.providers.map(p => {
-  const maxContext = Math.max(...p.models.map(m => m.contextWindow));
-  const minPrice = Math.min(...p.models.map(m => m.price.input)) * 1000000;
-  const minPriceOutput = Math.min(...p.models.map(m => m.price.output)) * 1000000;
-  return `| **${p.name}** | ${p.models.length} | ${maxContext.toLocaleString()} | $${minPrice.toFixed(2)}/1M - $${minPriceOutput.toFixed(2)}/1M |`;
-}).join('\n')}
+${providersTable}
 {: .table-responsive }
 
 ## 📑 详细供应商信息
