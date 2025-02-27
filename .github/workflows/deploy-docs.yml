@@ -1,0 +1,44 @@
+name: Deploy MkDocs
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # 添加这行，允许手动触发
+
+permissions:
+  contents: write
+  pages: write # 添加这行
+  id-token: write # 添加这行
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+
+      - name: Update docs
+        run: |
+          mkdir -p docs
+          node .github/scripts/update-readme.js
+          cp README.md docs/index.md
+
+      - name: Build and Deploy
+        run: |
+          mkdocs build
+          # 强制创建 gh-pages 分支
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          cd site
+          git init
+          git checkout -b gh-pages
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push -f origin gh-pages
