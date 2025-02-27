@@ -23,8 +23,8 @@ callouts:
     color: red
 
 # 自定义样式设置
-nav_width: 164px # 设置侧边栏宽度
-search_max_width: 164px # 搜索框最大宽度
+nav_width: 124px # 设置侧边栏宽度
+search_max_width: 124px # 搜索框最大宽度
 nav_external_links_target_blank: true # 外部链接在新标签页打开
 
 # 自定义 CSS
