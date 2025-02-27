@@ -18,7 +18,7 @@ try {
 
 | 供应商 | 支持的模型 |
 | :--- | :--- |
-${providersData.providers.map(p => `| **${p.name}** | ${p.models.map(m => \`\`${m.name}\`\``).join(', ')} |`).join('\n')}
+${providersData.providers.map(p => `| **${p.name}** | ${p.models.map(m => `\`${m.name}\``).join(', ')} |`).join('\n')}
 
 ## 🌟 特点
 
@@ -41,8 +41,8 @@ ${providersData.providers.map(p => `| **${p.name}** | ${p.models.map(m => \`\`${
 ## 📬 联系我们
 
 如有问题或建议，欢迎：
-- 提交 [Issue](https://github.com/你的用户名/ai-provider-list/issues)
-- 发起 [Pull Request](https://github.com/你的用户名/ai-provider-list/pulls)
+- 提交 [Issue](https://github.com/getofferhelp/ai-provider-list/issues)
+- 发起 [Pull Request](https://github.com/getofferhelp/ai-provider-list/pulls)
 `;
 
   // 写入文件
