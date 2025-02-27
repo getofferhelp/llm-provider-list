@@ -5,7 +5,11 @@ on:
     branches:
       - main
     paths:
-      - "data/**" # 当 data 目录有变化时触发
+      - "data/**"
+
+# 添加权限配置
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -16,6 +20,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: gh-pages # 目标分支
-          folder: data # 要部署的文件夹
-          clean: true # 清理旧文件
+          branch: gh-pages
+          folder: data
+          clean: true
