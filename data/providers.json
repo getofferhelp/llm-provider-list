@@ -268,7 +268,7 @@
       ]
     },
     {
-      "id": "Kimi",
+      "id": "kimi",
       "name": "Kimi",
       "keyUrl": "https://platform.moonshot.cn/console/api-keys",
       "apiBase": "https://api.moonshot.cn/v1/chat/completions",
