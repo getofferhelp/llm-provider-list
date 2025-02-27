@@ -3,7 +3,7 @@
   "providers": [
     {
       "id": "anthropic",
-      "name": "Caaaabbblaude",
+      "name": "Claude",
       "keyUrl": "https://console.anthropic.com/account/keys",
       "apiBase": "https://api.anthropic.com/v1/messages",
       "models": [
