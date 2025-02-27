@@ -19,33 +19,307 @@ permalink: /
 ![GitHub last commit](https://img.shields.io/github/last-commit/getofferhelp/ai-provider-list)
 ![GitHub](https://img.shields.io/github/license/getofferhelp/ai-provider-list)
 
-## 📊 支持的供应商
+## 📊 供应商概览
 {: .d-inline-block }
 
 New
 {: .label .label-green }
 
-下面列出了目前支持的 AI 服务供应商及其模型信息。最后更新时间：2025-02-27
+下面列出了目前支持的 AI 服务供应商及其模型数量统计。最后更新时间：2025-02-27
 {: .fs-5 }
 
-| 供应商 | 支持的模型 |
-| :--- | :--- |
-| **Claude** | `Claude 3 Opus`, `Claude 3 Sonnet`, `Claude 3 Haiku`, `Claude 2.1` |
-| **DeepSeek** | `DeepSeek Chat`, `DeepSeek Coder` |
-| **Gemini** | `Gemini Pro`, `Gemini Pro Vision`, `Gemini Ultra` |
-| **Groq** | `Mixtral 8x7B`, `LLaMA2 70B` |
-| **Grok** | `Grok-1` |
-| **Kimi** | `Moonshot V1 8K`, `Moonshot V1 32K`, `Moonshot V1 128K` |
-| **Mistral** | `Mistral Tiny`, `Mistral Small`, `Mistral Medium` |
-| **OpenAI** | `GPT-4 Turbo`, `GPT-4 Vision`, `GPT-4`, `GPT-3.5 Turbo` |
-| **Qwen** | `Qwen Turbo`, `Qwen Plus`, `Qwen Max`, `Qwen Max Long Context` |
+| 供应商 | 模型数量 | 最大上下文窗口 | 最低价格(输入/输出) |
+| :--- | :---: | :---: | :--- |
+| **Claude** | 4 | 200,000 | $0.0015/1K - $0.0075/1K |
+| **DeepSeek** | 2 | 32,000 | $0.0001/1K - $0.0002/1K |
+| **Gemini** | 3 | 32,000 | $0.00025/1K - $0.0005/1K |
+| **Groq** | 2 | 32,768 | $0.0001/1K - $0.0001/1K |
+| **Grok** | 1 | 8,192 | $0.0002/1K - $0.0002/1K |
+| **Kimi** | 3 | 131,072 | $0.0001/1K - $0.0001/1K |
+| **Mistral** | 3 | 32,000 | $0.0002/1K - $0.0006/1K |
+| **OpenAI** | 4 | 128,000 | $0.0005/1K - $0.0015/1K |
+| **Qwen** | 4 | 150,000 | $0.0002/1K - $0.0002/1K |
 {: .table-responsive }
+
+## 📑 详细供应商信息
+
+## Claude
+- API接口: `https://api.anthropic.com/v1/messages`
+- API密钥获取: [点击这里](https://console.anthropic.com/account/keys)
+
+
+### Claude 3 Opus
+- 模型ID: `claude-3-opus-20240229`
+- 上下文窗口: 200,000 tokens
+- 价格:
+  - 输入: $0.015/1K tokens
+  - 输出: $0.075/1K tokens
+
+
+### Claude 3 Sonnet
+- 模型ID: `claude-3-sonnet-20240229`
+- 上下文窗口: 200,000 tokens
+- 价格:
+  - 输入: $0.003/1K tokens
+  - 输出: $0.015/1K tokens
+
+
+### Claude 3 Haiku
+- 模型ID: `claude-3-haiku-20240307`
+- 上下文窗口: 200,000 tokens
+- 价格:
+  - 输入: $0.0015/1K tokens
+  - 输出: $0.0075/1K tokens
+
+
+### Claude 2.1
+- 模型ID: `claude-2.1`
+- 上下文窗口: 100,000 tokens
+- 价格:
+  - 输入: $0.008/1K tokens
+  - 输出: $0.024/1K tokens
+
+---
+
+## DeepSeek
+- API接口: `https://api.deepseek.com/v1/chat/completions`
+- API密钥获取: [点击这里](https://platform.deepseek.com/settings)
+
+
+### DeepSeek Chat
+- 模型ID: `deepseek-chat`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.002/1K tokens
+
+
+### DeepSeek Coder
+- 模型ID: `deepseek-coder`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.0001/1K tokens
+  - 输出: $0.0002/1K tokens
+
+---
+
+## Gemini
+- API接口: `https://generativelanguage.googleapis.com/v1/models`
+- API密钥获取: [点击这里](https://makersuite.google.com/app/apikey)
+
+
+### Gemini Pro
+- 模型ID: `gemini-1.0-pro`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.00025/1K tokens
+  - 输出: $0.0005/1K tokens
+
+
+### Gemini Pro Vision
+- 模型ID: `gemini-1.0-pro-vision`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.00025/1K tokens
+  - 输出: $0.0005/1K tokens
+
+
+### Gemini Ultra
+- 模型ID: `gemini-1.0-ultra`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.001/1K tokens
+  - 输出: $0.002/1K tokens
+
+---
+
+## Groq
+- API接口: `https://api.groq.com/v1/chat/completions`
+- API密钥获取: [点击这里](https://console.groq.com/keys)
+
+
+### Mixtral 8x7B
+- 模型ID: `mixtral-8x7b-32768`
+- 上下文窗口: 32,768 tokens
+- 价格:
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.0002/1K tokens
+
+
+### LLaMA2 70B
+- 模型ID: `llama2-70b-4096`
+- 上下文窗口: 4,096 tokens
+- 价格:
+  - 输入: $0.0001/1K tokens
+  - 输出: $0.0001/1K tokens
+
+---
+
+## Grok
+- API接口: `https://api.grok.x.ai/v1/chat/completions`
+- API密钥获取: [点击这里](https://grok.x.ai)
+
+
+### Grok-1
+- 模型ID: `grok-1`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.0002/1K tokens
+
+---
+
+## Kimi
+- API接口: `https://api.moonshot.cn/v1/chat/completions`
+- API密钥获取: [点击这里](https://platform.moonshot.cn/console/api-keys)
+
+
+### Moonshot V1 8K
+- 模型ID: `moonshot-v1-8k`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.0001/1K tokens
+  - 输出: $0.0001/1K tokens
+
+
+### Moonshot V1 32K
+- 模型ID: `moonshot-v1-32k`
+- 上下文窗口: 32,768 tokens
+- 价格:
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.0002/1K tokens
+
+
+### Moonshot V1 128K
+- 模型ID: `moonshot-v1-128k`
+- 上下文窗口: 131,072 tokens
+- 价格:
+  - 输入: $0.0004/1K tokens
+  - 输出: $0.0004/1K tokens
+
+---
+
+## Mistral
+- API接口: `https://api.mistral.ai/v1/chat/completions`
+- API密钥获取: [点击这里](https://console.mistral.ai/api-keys/)
+
+
+### Mistral Tiny
+- 模型ID: `mistral-tiny`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.0006/1K tokens
+
+
+### Mistral Small
+- 模型ID: `mistral-small`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.0024/1K tokens
+
+
+### Mistral Medium
+- 模型ID: `mistral-medium`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.0027/1K tokens
+  - 输出: $0.0087/1K tokens
+
+---
+
+## OpenAI
+- API接口: `https://api.openai.com/v1/chat/completions`
+- API密钥获取: [点击这里](https://platform.openai.com/api-keys)
+
+
+### GPT-4 Turbo
+- 模型ID: `gpt-4-turbo-preview`
+- 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.01/1K tokens
+  - 输出: $0.03/1K tokens
+
+
+### GPT-4 Vision
+- 模型ID: `gpt-4-vision-preview`
+- 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.01/1K tokens
+  - 输出: $0.03/1K tokens
+
+
+### GPT-4
+- 模型ID: `gpt-4`
+- 上下文窗口: 8,192 tokens
+- 价格:
+  - 输入: $0.03/1K tokens
+  - 输出: $0.06/1K tokens
+
+
+### GPT-3.5 Turbo
+- 模型ID: `gpt-3.5-turbo`
+- 上下文窗口: 16,385 tokens
+- 价格:
+  - 输入: $0.0005/1K tokens
+  - 输出: $0.0015/1K tokens
+
+---
+
+## Qwen
+- API接口: `https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation`
+- API密钥获取: [点击这里](https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key)
+
+
+### Qwen Turbo
+- 模型ID: `qwen-turbo`
+- 上下文窗口: 6,000 tokens
+- 价格:
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.0002/1K tokens
+
+
+### Qwen Plus
+- 模型ID: `qwen-plus`
+- 上下文窗口: 30,000 tokens
+- 价格:
+  - 输入: $0.001/1K tokens
+  - 输出: $0.001/1K tokens
+
+
+### Qwen Max
+- 模型ID: `qwen-max`
+- 上下文窗口: 30,000 tokens
+- 价格:
+  - 输入: $0.002/1K tokens
+  - 输出: $0.002/1K tokens
+
+
+### Qwen Max Long Context
+- 模型ID: `qwen-max-longcontext`
+- 上下文窗口: 150,000 tokens
+- 价格:
+  - 输入: $0.002/1K tokens
+  - 输出: $0.002/1K tokens
+
+---
+
 
 ## 🌟 特点
 
-- 实时更新的供应商信息
-- 包含详细的模型支持列表
+- 实时更新的供应商和模型信息
+- 详细的价格和性能参数
+- 直观的API接口信息
+- 完整的模型规格说明
 - 开源维护，社区驱动
+
+## 💡 选择建议
+
+- **高性能需求**: 推荐使用 Claude 3 Opus、GPT-4等大型模型
+- **性价比之选**: Mistral、Moonshot等价格较低的模型
+- **长文本处理**: 选择 Claude 3系列、GPT-4 Turbo等大上下文窗口模型
+- **成本敏感**: 可以考虑 DeepSeek、Moonshot等较经济的选择
 
 ## 🤝 如何贡献
 {: .d-inline-block }
