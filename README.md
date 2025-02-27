@@ -49,7 +49,7 @@ New
 
 
 ### Claude 3 Opus
-- 模型ID: `claude-3-opus-20240229`
+- 模型ID: `ccccclaude-3-opus-20240229`
 - 上下文窗口: 200,000 tokens
 - 价格:
   - 输入: $0.015/1K tokens
