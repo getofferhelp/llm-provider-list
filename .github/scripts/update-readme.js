@@ -11,8 +11,8 @@ try {
 - 模型ID: \`${model.id}\`
 - 上下文窗口: ${model.contextWindow.toLocaleString()} tokens
 - 价格:
-  - 输入: $${model.price.input}/1K tokens
-  - 输出: $${model.price.output}/1K tokens
+  - 输入: $${(model.price.input * 1000000).toFixed(2)}/1M tokens
+  - 输出: $${(model.price.output * 1000000).toFixed(2)}/1M tokens
 `).join('\n');
 
     return `## ${provider.name}
@@ -59,9 +59,9 @@ New
 | :--- | :---: | :---: | :--- |
 ${providersData.providers.map(p => {
   const maxContext = Math.max(...p.models.map(m => m.contextWindow));
-  const minPrice = Math.min(...p.models.map(m => m.price.input));
-  const minPriceOutput = Math.min(...p.models.map(m => m.price.output));
-  return `| **${p.name}** | ${p.models.length} | ${maxContext.toLocaleString()} | $${minPrice}/1K - $${minPriceOutput}/1K |`;
+  const minPrice = Math.min(...p.models.map(m => m.price.input)) * 1000000;
+  const minPriceOutput = Math.min(...p.models.map(m => m.price.output)) * 1000000;
+  return `| **${p.name}** | ${p.models.length} | ${maxContext.toLocaleString()} | $${minPrice.toFixed(2)}/1M - $${minPriceOutput.toFixed(2)}/1M |`;
 }).join('\n')}
 {: .table-responsive }
 
