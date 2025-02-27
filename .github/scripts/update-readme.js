@@ -11,8 +11,8 @@ try {
 - 模型ID: \`${model.id}\`
 - 上下文窗口: ${model.contextWindow.toLocaleString()} tokens
 - 价格:
-  - 输入: $${(model.price.input * 1000000).toFixed(2)}/1M tokens
-  - 输出: $${(model.price.output * 1000000).toFixed(2)}/1M tokens
+  - 输入: $${(model.price.input * 1000).toFixed(2)}/1M tokens
+  - 输出: $${(model.price.output * 1000).toFixed(2)}/1M tokens
 `).join('\n');
 
     return `## ${provider.name}
