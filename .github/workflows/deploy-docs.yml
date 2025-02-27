@@ -31,12 +31,5 @@ jobs:
           node .github/scripts/update-readme.js
           cp README.md docs/index.md
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
       - name: Deploy
-        run: |
-          git fetch origin gh-pages --depth=1 || true
-          mkdocs gh-deploy --force --clean
+        run: mkdocs gh-deploy --force
