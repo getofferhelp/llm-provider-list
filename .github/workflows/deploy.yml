@@ -1,0 +1,25 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/**"
+
+# 添加权限配置
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: data
+          clean: true
