@@ -9,7 +9,7 @@
       "models": [
 
         {
-          "id": "ccccclaude-3-opus-20240229",
+          "id": "claude-3-opus-20240229",
           "name": "Claude 3 Opus",
           "contextWindow": 200000,
           "price": {
