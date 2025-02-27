@@ -114,30 +114,48 @@
       "apiBase": "https://api.groq.com/v1/chat/completions",
       "models": [
         {
+          "id": "llama-3-3-70b-versatile",
+          "name": "LLaMA 3.3 70B Versatile",
+          "contextWindow": 128000,
+          "price": {
+            "input": 0.00059,
+            "output": 0.00079
+          }
+        },
+        {
+          "id": "llama-3-1-8b-instant",
+          "name": "LLaMA 3.1 8B Instant",
+          "contextWindow": 128000,
+          "price": {
+            "input": 0.00005,
+            "output": 0.00008
+          }
+        },
+        {
           "id": "mixtral-8x7b-32768",
           "name": "Mixtral 8x7B",
           "contextWindow": 32768,
+          "price": {
+            "input": 0.00024,
+            "output": 0.00024
+          }
+        },
+        {
+          "id": "gemma2-9b-it",
+          "name": "Gemma 2 9B",
+          "contextWindow": 8192,
           "price": {
             "input": 0.0002,
             "output": 0.0002
           }
         },
         {
-          "id": "llama3-8b-8192",
-          "name": "LLaMA3 8B",
+          "id": "llama-guard-3-8b",
+          "name": "LLaMA Guard 3 8B",
           "contextWindow": 8192,
           "price": {
-            "input": 0.0001,
-            "output": 0.0001
-          }
-        },
-        {
-          "id": "deepseek-coder",
-          "name": "DeepSeek Coder",
-          "contextWindow": 32000,
-          "price": {
-            "input": 0.0001,
-            "output": 0.0001
+            "input": 0.0002,
+            "output": 0.0002
           }
         }
       ]
