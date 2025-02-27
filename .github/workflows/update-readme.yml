@@ -6,14 +6,20 @@ on:
       - "data/providers.json"
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: "16"
 
@@ -21,15 +27,27 @@ jobs:
         run: |
           echo "开始更新 README..."
           node .github/scripts/update-readme.js
-          echo "更新完成"
+          echo "更新完成，当前 README 内容："
           cat README.md
 
-      - name: Commit changes
+      - name: Commit and Push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          echo "检查文件状态..."
           git status
-          git diff --staged
-          git commit -m "docs: 自动更新 README [skip ci]" || echo "没有变更需要提交"
-          git push || echo "没有变更需要推送"
+
+          echo "检查文件差异..."
+          git diff README.md
+
+          git add README.md
+
+          if git diff --staged --quiet; then
+            echo "没有需要提交的更改"
+          else
+            echo "提交更改..."
+            git commit -m "docs: 自动更新 README [skip ci]"
+            echo "推送更改..."
+            git push
+          fi
