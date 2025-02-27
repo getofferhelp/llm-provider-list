@@ -18,8 +18,8 @@ try {
 - 模型ID: \`${model.id}\`
 - 上下文窗口: ${model.contextWindow.toLocaleString()} tokens
 - 价格:
-  - 输入: ${currencySymbol}${(model.price.input * 1000).toFixed(2)}/1M tokens
-  - 输出: ${currencySymbol}${(model.price.output * 1000).toFixed(2)}/1M tokens
+  - 输入: ${currencySymbol}${(model.price.input * 10000).toFixed(2)}/1M tokens
+  - 输出: ${currencySymbol}${(model.price.output * 10000).toFixed(2)}/1M tokens
 `).join('\n');
 
     return `## ${provider.name}
@@ -35,8 +35,8 @@ ${modelDetails}
   const providersTable = providersData.providers.map(p => {
     const currencySymbol = getCurrencySymbol(p.id);
     const maxContext = Math.max(...p.models.map(m => m.contextWindow));
-    const minPrice = Math.min(...p.models.map(m => m.price.input)) * 1000;
-    const minPriceOutput = Math.min(...p.models.map(m => m.price.output)) * 1000;
+    const minPrice = Math.min(...p.models.map(m => m.price.input)) * 10000;
+    const minPriceOutput = Math.min(...p.models.map(m => m.price.output)) * 10000;
     return `| **${p.name}** | ${p.models.length} | ${maxContext.toLocaleString()} | ${currencySymbol}${minPrice.toFixed(2)}/1M - ${currencySymbol}${minPriceOutput.toFixed(2)}/1M |`;
   }).join('\n');
 
