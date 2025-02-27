@@ -30,12 +30,12 @@ New
 
 | 供应商 | 模型数量 | 最大上下文窗口 | 最低价格(输入/输出) |
 | :--- | :---: | :---: | :--- |
-| **Claude** | 3 | 200,000 | $30.00/1M - $150.00/1M |
+| **Claude** | 3 | 200,000 | $3.00/1M - $15.00/1M |
 | **DeepSeek** | 2 | 32,000 | ¥2.00/1M - ¥8.00/1M |
 | **Gemini** | 4 | 32,000 | $2.50/1M - $5.00/1M |
 | **Groq** | 15 | 128,000 | $0.40/1M - $0.40/1M |
 | **Grok** | 1 | 8,192 | $2.00/1M - $2.00/1M |
-| **Kimi** | 3 | 131,072 | ¥1.20/1M - ¥1.20/1M |
+| **Kimi** | 3 | 131,072 | ¥12.00/1M - ¥12.00/1M |
 | **Mistral** | 3 | 32,000 | $2.00/1M - $6.00/1M |
 | **OpenAI** | 4 | 128,000 | $5.00/1M - $15.00/1M |
 | **Qwen** | 4 | 150,000 | ¥2.00/1M - ¥2.00/1M |
@@ -49,27 +49,27 @@ New
 
 
 ### Claude 3.5 Opus
-- 模型ID: `claude-3-5-opus-20240229`
+- 模型ID: `claude-3-opus-20240229`
 - 上下文窗口: 200,000 tokens
 - 价格:
-  - 输入: $150.00/1M tokens
-  - 输出: $750.00/1M tokens
+  - 输入: $15.00/1M tokens
+  - 输出: $75.00/1M tokens
 
 
 ### Claude 3.5 Sonnet
-- 模型ID: `claude-3-5-sonnet-20240229`
+- 模型ID: `claude-3-5-sonnet-20241022`
 - 上下文窗口: 200,000 tokens
 - 价格:
-  - 输入: $30.00/1M tokens
-  - 输出: $150.00/1M tokens
+  - 输入: $3.00/1M tokens
+  - 输出: $15.00/1M tokens
 
 
 ### Claude 3.7 Sonnet
-- 模型ID: `claude-3-7-sonnet`
+- 模型ID: `claude-3-7-sonnet-20250219`
 - 上下文窗口: 100,000 tokens
 - 价格:
-  - 输入: $80.00/1M tokens
-  - 输出: $240.00/1M tokens
+  - 输入: $8.00/1M tokens
+  - 输出: $24.00/1M tokens
 
 ---
 
@@ -282,24 +282,24 @@ New
 - 模型ID: `moonshot-v1-8k`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: ¥1.20/1M tokens
-  - 输出: ¥1.20/1M tokens
+  - 输入: ¥12.00/1M tokens
+  - 输出: ¥12.00/1M tokens
 
 
 ### Moonshot V1 32K
 - 模型ID: `moonshot-v1-32k`
 - 上下文窗口: 32,768 tokens
 - 价格:
-  - 输入: ¥2.40/1M tokens
-  - 输出: ¥2.40/1M tokens
+  - 输入: ¥24.00/1M tokens
+  - 输出: ¥24.00/1M tokens
 
 
 ### Moonshot V1 128K
 - 模型ID: `moonshot-v1-128k`
 - 上下文窗口: 131,072 tokens
 - 价格:
-  - 输入: ¥6.00/1M tokens
-  - 输出: ¥6.00/1M tokens
+  - 输入: ¥60.00/1M tokens
+  - 输出: ¥60.00/1M tokens
 
 ---
 
