@@ -7,9 +7,9 @@
       "keyUrl": "https://console.anthropic.com/account/keys",
       "apiBase": "https://api.anthropic.com/v1/messages",
       "models": [
-        
+
         {
-          "id": "claude-3-opus-20240229",
+          "id": "ccccclaude-3-opus-20240229",
           "name": "Claude 3 Opus",
           "contextWindow": 200000,
           "price": {
