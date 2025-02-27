@@ -16,7 +16,6 @@
             "output": 0.075
           }
         },
-        
         {
           "id": "claude-3-sonnet-20240229",
           "name": "Claude 3 Sonnet",
