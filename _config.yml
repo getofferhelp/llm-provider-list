@@ -1,0 +1,40 @@
+title: AI Provider List
+description: 一个全面的 AI 模型供应商列表
+remote_theme: just-the-docs/just-the-docs
+
+# Just the Docs 主题配置
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+
+# 导航相关
+aux_links:
+  "GitHub 仓库":
+    - "https://github.com/getofferhelp/ai-provider-list"
+
+# 页面底部
+footer_content: "由 <a href='https://github.com/getofferhelp'>GetOfferHelp</a> 维护"
+
+# 主题颜色定制
+callouts:
+  note:
+    color: blue
+  warning:
+    color: red
+
+# 自定义样式设置
+nav_width: 124px # 设置侧边栏宽度
+search_max_width: 124px # 搜索框最大宽度
+nav_external_links_target_blank: true # 外部链接在新标签页打开
+
+# 自定义 CSS
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
