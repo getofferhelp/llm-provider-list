@@ -30,15 +30,15 @@ New
 
 | 供应商 | 模型数量 | 最大上下文窗口 | 最低价格(输入/输出) |
 | :--- | :---: | :---: | :--- |
-| **Claude** | 3 | 200,000 | $3.00/1M - $15.00/1M |
-| **DeepSeek** | 2 | 32,000 | ¥0.10/1M - ¥0.20/1M |
-| **Gemini** | 4 | 32,000 | $0.25/1M - $0.50/1M |
-| **Groq** | 15 | 128,000 | $0.04/1M - $0.04/1M |
-| **Grok** | 1 | 8,192 | $0.20/1M - $0.20/1M |
-| **Kimi** | 3 | 131,072 | ¥0.10/1M - ¥0.10/1M |
-| **Mistral** | 3 | 32,000 | $0.20/1M - $0.60/1M |
-| **OpenAI** | 4 | 128,000 | $0.50/1M - $1.50/1M |
-| **Qwen** | 4 | 150,000 | ¥0.20/1M - ¥0.20/1M |
+| **Claude** | 3 | 200,000 | $30.00/1M - $150.00/1M |
+| **DeepSeek** | 2 | 32,000 | ¥2.00/1M - ¥8.00/1M |
+| **Gemini** | 4 | 32,000 | $2.50/1M - $5.00/1M |
+| **Groq** | 15 | 128,000 | $0.40/1M - $0.40/1M |
+| **Grok** | 1 | 8,192 | $2.00/1M - $2.00/1M |
+| **Kimi** | 3 | 131,072 | ¥1.20/1M - ¥1.20/1M |
+| **Mistral** | 3 | 32,000 | $2.00/1M - $6.00/1M |
+| **OpenAI** | 4 | 128,000 | $5.00/1M - $15.00/1M |
+| **Qwen** | 4 | 150,000 | ¥2.00/1M - ¥2.00/1M |
 {: .table-responsive }
 
 ## 📑 详细供应商信息
@@ -52,24 +52,24 @@ New
 - 模型ID: `claude-3-5-opus-20240229`
 - 上下文窗口: 200,000 tokens
 - 价格:
-  - 输入: $15.00/1M tokens
-  - 输出: $75.00/1M tokens
+  - 输入: $150.00/1M tokens
+  - 输出: $750.00/1M tokens
 
 
 ### Claude 3.5 Sonnet
 - 模型ID: `claude-3-5-sonnet-20240229`
 - 上下文窗口: 200,000 tokens
 - 价格:
-  - 输入: $3.00/1M tokens
-  - 输出: $15.00/1M tokens
+  - 输入: $30.00/1M tokens
+  - 输出: $150.00/1M tokens
 
 
 ### Claude 3.7 Sonnet
 - 模型ID: `claude-3-7-sonnet`
 - 上下文窗口: 100,000 tokens
 - 价格:
-  - 输入: $8.00/1M tokens
-  - 输出: $24.00/1M tokens
+  - 输入: $80.00/1M tokens
+  - 输出: $240.00/1M tokens
 
 ---
 
@@ -82,16 +82,16 @@ New
 - 模型ID: `deepseek-chat`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: ¥0.20/1M tokens
-  - 输出: ¥2.00/1M tokens
+  - 输入: ¥2.00/1M tokens
+  - 输出: ¥8.00/1M tokens
 
 
 ### DeepSeek R1
 - 模型ID: `deepseek-r1`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: ¥0.10/1M tokens
-  - 输出: ¥0.20/1M tokens
+  - 输入: ¥4.00/1M tokens
+  - 输出: ¥16.00/1M tokens
 
 ---
 
@@ -104,32 +104,32 @@ New
 - 模型ID: `gemini-1.5-pro`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: $0.25/1M tokens
-  - 输出: $0.50/1M tokens
+  - 输入: $2.50/1M tokens
+  - 输出: $5.00/1M tokens
 
 
 ### Gemini 1.5 Pro Vision
 - 模型ID: `gemini-1.5-pro-vision`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: $0.25/1M tokens
-  - 输出: $0.50/1M tokens
+  - 输入: $2.50/1M tokens
+  - 输出: $5.00/1M tokens
 
 
 ### Gemini 1.5 Ultra
 - 模型ID: `gemini-1.5-ultra`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: $1.00/1M tokens
-  - 输出: $2.00/1M tokens
+  - 输入: $10.00/1M tokens
+  - 输出: $20.00/1M tokens
 
 
 ### Gemini 2.0 Pro
 - 模型ID: `gemini-2.0-pro`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: $0.25/1M tokens
-  - 输出: $0.50/1M tokens
+  - 输入: $2.50/1M tokens
+  - 输出: $5.00/1M tokens
 
 ---
 
@@ -142,120 +142,120 @@ New
 - 模型ID: `deepseek-r1-distill-llama-70b`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.75/1M tokens
-  - 输出: $0.99/1M tokens
+  - 输入: $7.50/1M tokens
+  - 输出: $9.90/1M tokens
 
 
 ### DeepSeek R1 Distill Qwen 32B
 - 模型ID: `deepseek-r1-distill-qwen-32b`
 - 上下文窗口: 128,000 tokens
 - 价格:
-  - 输入: $0.69/1M tokens
-  - 输出: $0.69/1M tokens
+  - 输入: $6.90/1M tokens
+  - 输出: $6.90/1M tokens
 
 
 ### Qwen 2.5 32B Instruct
 - 模型ID: `qwen-2.5-32b-instruct`
 - 上下文窗口: 128,000 tokens
 - 价格:
-  - 输入: $0.79/1M tokens
-  - 输出: $0.79/1M tokens
+  - 输入: $7.90/1M tokens
+  - 输出: $7.90/1M tokens
 
 
 ### Qwen 2.5 Coder 32B Instruct
 - 模型ID: `qwen-2.5-coder-32b-instruct`
 - 上下文窗口: 128,000 tokens
 - 价格:
-  - 输入: $0.79/1M tokens
-  - 输出: $0.79/1M tokens
+  - 输入: $7.90/1M tokens
+  - 输出: $7.90/1M tokens
 
 
 ### Mistral Saba 24B
 - 模型ID: `mistral-saba-24b`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.79/1M tokens
-  - 输出: $0.79/1M tokens
+  - 输入: $7.90/1M tokens
+  - 输出: $7.90/1M tokens
 
 
 ### LLaMA 3.2 1B
 - 模型ID: `llama-3.2-1b`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.04/1M tokens
-  - 输出: $0.04/1M tokens
+  - 输入: $0.40/1M tokens
+  - 输出: $0.40/1M tokens
 
 
 ### LLaMA 3.2 3B
 - 模型ID: `llama-3.2-3b`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.06/1M tokens
-  - 输出: $0.06/1M tokens
+  - 输入: $0.60/1M tokens
+  - 输出: $0.60/1M tokens
 
 
 ### LLaMA 3.3 70B Versatile
 - 模型ID: `llama-3.3-70b-versatile`
 - 上下文窗口: 128,000 tokens
 - 价格:
-  - 输入: $0.59/1M tokens
-  - 输出: $0.79/1M tokens
+  - 输入: $5.90/1M tokens
+  - 输出: $7.90/1M tokens
 
 
 ### LLaMA 3.1 8B Instant
 - 模型ID: `llama-3.1-8b-instant`
 - 上下文窗口: 128,000 tokens
 - 价格:
-  - 输入: $0.05/1M tokens
-  - 输出: $0.08/1M tokens
+  - 输入: $0.50/1M tokens
+  - 输出: $0.80/1M tokens
 
 
 ### LLaMA 3 70B
 - 模型ID: `llama-3-70b`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.59/1M tokens
-  - 输出: $0.79/1M tokens
+  - 输入: $5.90/1M tokens
+  - 输出: $7.90/1M tokens
 
 
 ### LLaMA 3 8B
 - 模型ID: `llama-3-8b`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.05/1M tokens
-  - 输出: $0.08/1M tokens
+  - 输入: $0.50/1M tokens
+  - 输出: $0.80/1M tokens
 
 
 ### Mixtral 8x7B
 - 模型ID: `mixtral-8x7b-32768`
 - 上下文窗口: 32,768 tokens
 - 价格:
-  - 输入: $0.24/1M tokens
-  - 输出: $0.24/1M tokens
+  - 输入: $2.40/1M tokens
+  - 输出: $2.40/1M tokens
 
 
 ### Gemma 2 9B
 - 模型ID: `gemma2-9b-it`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.20/1M tokens
-  - 输出: $0.20/1M tokens
+  - 输入: $2.00/1M tokens
+  - 输出: $2.00/1M tokens
 
 
 ### LLaMA Guard 3 8B
 - 模型ID: `llama-guard-3-8b`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.20/1M tokens
-  - 输出: $0.20/1M tokens
+  - 输入: $2.00/1M tokens
+  - 输出: $2.00/1M tokens
 
 
 ### LLaMA 3.3 70B SpecDec
 - 模型ID: `llama-3.3-70b-specdec`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.59/1M tokens
-  - 输出: $0.99/1M tokens
+  - 输入: $5.90/1M tokens
+  - 输出: $9.90/1M tokens
 
 ---
 
@@ -268,8 +268,8 @@ New
 - 模型ID: `grok-1`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.20/1M tokens
-  - 输出: $0.20/1M tokens
+  - 输入: $2.00/1M tokens
+  - 输出: $2.00/1M tokens
 
 ---
 
@@ -282,24 +282,24 @@ New
 - 模型ID: `moonshot-v1-8k`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: ¥0.10/1M tokens
-  - 输出: ¥0.10/1M tokens
+  - 输入: ¥1.20/1M tokens
+  - 输出: ¥1.20/1M tokens
 
 
 ### Moonshot V1 32K
 - 模型ID: `moonshot-v1-32k`
 - 上下文窗口: 32,768 tokens
 - 价格:
-  - 输入: ¥0.20/1M tokens
-  - 输出: ¥0.20/1M tokens
+  - 输入: ¥2.40/1M tokens
+  - 输出: ¥2.40/1M tokens
 
 
 ### Moonshot V1 128K
 - 模型ID: `moonshot-v1-128k`
 - 上下文窗口: 131,072 tokens
 - 价格:
-  - 输入: ¥0.40/1M tokens
-  - 输出: ¥0.40/1M tokens
+  - 输入: ¥6.00/1M tokens
+  - 输出: ¥6.00/1M tokens
 
 ---
 
@@ -312,24 +312,24 @@ New
 - 模型ID: `mistral-tiny`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: $0.20/1M tokens
-  - 输出: $0.60/1M tokens
+  - 输入: $2.00/1M tokens
+  - 输出: $6.00/1M tokens
 
 
 ### Mistral Small
 - 模型ID: `mistral-small`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: $0.20/1M tokens
-  - 输出: $2.40/1M tokens
+  - 输入: $2.00/1M tokens
+  - 输出: $24.00/1M tokens
 
 
 ### Mistral Medium
 - 模型ID: `mistral-medium`
 - 上下文窗口: 32,000 tokens
 - 价格:
-  - 输入: $2.70/1M tokens
-  - 输出: $8.70/1M tokens
+  - 输入: $27.00/1M tokens
+  - 输出: $87.00/1M tokens
 
 ---
 
@@ -342,32 +342,32 @@ New
 - 模型ID: `gpt-4-turbo-preview`
 - 上下文窗口: 128,000 tokens
 - 价格:
-  - 输入: $10.00/1M tokens
-  - 输出: $30.00/1M tokens
+  - 输入: $100.00/1M tokens
+  - 输出: $300.00/1M tokens
 
 
 ### GPT-4 Vision
 - 模型ID: `gpt-4-vision-preview`
 - 上下文窗口: 128,000 tokens
 - 价格:
-  - 输入: $10.00/1M tokens
-  - 输出: $30.00/1M tokens
+  - 输入: $100.00/1M tokens
+  - 输出: $300.00/1M tokens
 
 
 ### GPT-4
 - 模型ID: `gpt-4`
 - 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $30.00/1M tokens
-  - 输出: $60.00/1M tokens
+  - 输入: $300.00/1M tokens
+  - 输出: $600.00/1M tokens
 
 
 ### GPT-3.5 Turbo
 - 模型ID: `gpt-3.5-turbo`
 - 上下文窗口: 16,385 tokens
 - 价格:
-  - 输入: $0.50/1M tokens
-  - 输出: $1.50/1M tokens
+  - 输入: $5.00/1M tokens
+  - 输出: $15.00/1M tokens
 
 ---
 
@@ -380,32 +380,32 @@ New
 - 模型ID: `qwen-turbo`
 - 上下文窗口: 6,000 tokens
 - 价格:
-  - 输入: ¥0.20/1M tokens
-  - 输出: ¥0.20/1M tokens
+  - 输入: ¥2.00/1M tokens
+  - 输出: ¥2.00/1M tokens
 
 
 ### Qwen Plus
 - 模型ID: `qwen-plus`
 - 上下文窗口: 30,000 tokens
 - 价格:
-  - 输入: ¥1.00/1M tokens
-  - 输出: ¥1.00/1M tokens
+  - 输入: ¥10.00/1M tokens
+  - 输出: ¥10.00/1M tokens
 
 
 ### Qwen Max
 - 模型ID: `qwen-max`
 - 上下文窗口: 30,000 tokens
 - 价格:
-  - 输入: ¥2.00/1M tokens
-  - 输出: ¥2.00/1M tokens
+  - 输入: ¥20.00/1M tokens
+  - 输出: ¥20.00/1M tokens
 
 
 ### Qwen Max Long Context
 - 模型ID: `qwen-max-longcontext`
 - 上下文窗口: 150,000 tokens
 - 价格:
-  - 输入: ¥2.00/1M tokens
-  - 输出: ¥2.00/1M tokens
+  - 输入: ¥20.00/1M tokens
+  - 输出: ¥20.00/1M tokens
 
 ---
 
