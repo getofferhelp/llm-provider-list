@@ -30,10 +30,10 @@ New
 
 | 供应商 | 模型数量 | 最大上下文窗口 | 最低价格(输入/输出) |
 | :--- | :---: | :---: | :--- |
-| **Claude** | 4 | 200,000 | $0.0015/1K - $0.0075/1K |
+| **Claude** | 3 | 200,000 | $0.003/1K - $0.015/1K |
 | **DeepSeek** | 2 | 32,000 | $0.0001/1K - $0.0002/1K |
-| **Gemini** | 3 | 32,000 | $0.00025/1K - $0.0005/1K |
-| **Groq** | 2 | 32,768 | $0.0001/1K - $0.0001/1K |
+| **Gemini** | 4 | 32,000 | $0.00025/1K - $0.0005/1K |
+| **Groq** | 5 | 128,000 | $0.00005/1K - $0.00008/1K |
 | **Grok** | 1 | 8,192 | $0.0002/1K - $0.0002/1K |
 | **Kimi** | 3 | 131,072 | $0.0001/1K - $0.0001/1K |
 | **Mistral** | 3 | 32,000 | $0.0002/1K - $0.0006/1K |
@@ -48,32 +48,24 @@ New
 - API密钥获取: [点击这里](https://console.anthropic.com/account/keys)
 
 
-### Claude 3 Opus
-- 模型ID: `claude-3-opus-20240229`
+### Claude 3.5 Opus
+- 模型ID: `claude-3-5-opus-20240229`
 - 上下文窗口: 200,000 tokens
 - 价格:
   - 输入: $0.015/1K tokens
   - 输出: $0.075/1K tokens
 
 
-### Claude 3 Sonnet
-- 模型ID: `claude-3-sonnet-20240229`
+### Claude 3.5 Sonnet
+- 模型ID: `claude-3-5-sonnet-20240229`
 - 上下文窗口: 200,000 tokens
 - 价格:
   - 输入: $0.003/1K tokens
   - 输出: $0.015/1K tokens
 
 
-### Claude 3 Haiku
-- 模型ID: `claude-3-haiku-20240307`
-- 上下文窗口: 200,000 tokens
-- 价格:
-  - 输入: $0.0015/1K tokens
-  - 输出: $0.0075/1K tokens
-
-
-### Claude 2.1
-- 模型ID: `claude-2.1`
+### Claude 3.7 Sonnet
+- 模型ID: `claude-3-7-sonnet`
 - 上下文窗口: 100,000 tokens
 - 价格:
   - 输入: $0.008/1K tokens
@@ -94,8 +86,8 @@ New
   - 输出: $0.002/1K tokens
 
 
-### DeepSeek Coder
-- 模型ID: `deepseek-coder`
+### DeepSeek R1
+- 模型ID: `deepseek-r1`
 - 上下文窗口: 32,000 tokens
 - 价格:
   - 输入: $0.0001/1K tokens
@@ -108,28 +100,36 @@ New
 - API密钥获取: [点击这里](https://makersuite.google.com/app/apikey)
 
 
-### Gemini Pro
-- 模型ID: `gemini-1.0-pro`
+### Gemini 1.5 Pro
+- 模型ID: `gemini-1.5-pro`
 - 上下文窗口: 32,000 tokens
 - 价格:
   - 输入: $0.00025/1K tokens
   - 输出: $0.0005/1K tokens
 
 
-### Gemini Pro Vision
-- 模型ID: `gemini-1.0-pro-vision`
+### Gemini 1.5 Pro Vision
+- 模型ID: `gemini-1.5-pro-vision`
 - 上下文窗口: 32,000 tokens
 - 价格:
   - 输入: $0.00025/1K tokens
   - 输出: $0.0005/1K tokens
 
 
-### Gemini Ultra
-- 模型ID: `gemini-1.0-ultra`
+### Gemini 1.5 Ultra
+- 模型ID: `gemini-1.5-ultra`
 - 上下文窗口: 32,000 tokens
 - 价格:
   - 输入: $0.001/1K tokens
   - 输出: $0.002/1K tokens
+
+
+### Gemini 2.0 Pro
+- 模型ID: `gemini-2.0-pro`
+- 上下文窗口: 32,000 tokens
+- 价格:
+  - 输入: $0.00025/1K tokens
+  - 输出: $0.0005/1K tokens
 
 ---
 
@@ -138,20 +138,44 @@ New
 - API密钥获取: [点击这里](https://console.groq.com/keys)
 
 
+### LLaMA 3.3 70B Versatile
+- 模型ID: `llama-3-3-70b-versatile`
+- 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.00059/1K tokens
+  - 输出: $0.00079/1K tokens
+
+
+### LLaMA 3.1 8B Instant
+- 模型ID: `llama-3-1-8b-instant`
+- 上下文窗口: 128,000 tokens
+- 价格:
+  - 输入: $0.00005/1K tokens
+  - 输出: $0.00008/1K tokens
+
+
 ### Mixtral 8x7B
 - 模型ID: `mixtral-8x7b-32768`
 - 上下文窗口: 32,768 tokens
+- 价格:
+  - 输入: $0.00024/1K tokens
+  - 输出: $0.00024/1K tokens
+
+
+### Gemma 2 9B
+- 模型ID: `gemma2-9b-it`
+- 上下文窗口: 8,192 tokens
 - 价格:
   - 输入: $0.0002/1K tokens
   - 输出: $0.0002/1K tokens
 
 
-### LLaMA2 70B
-- 模型ID: `llama2-70b-4096`
-- 上下文窗口: 4,096 tokens
+### LLaMA Guard 3 8B
+- 模型ID: `llama-guard-3-8b`
+- 上下文窗口: 8,192 tokens
 - 价格:
-  - 输入: $0.0001/1K tokens
-  - 输出: $0.0001/1K tokens
+  - 输入: $0.0002/1K tokens
+  - 输出: $0.0002/1K tokens
 
 ---
 
