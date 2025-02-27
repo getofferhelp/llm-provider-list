@@ -19,11 +19,17 @@ jobs:
 
       - name: Update README
         run: |
+          echo "开始更新 README..."
           node .github/scripts/update-readme.js
+          echo "更新完成"
+          cat README.md
 
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: 自动更新 README [skip ci]" && git push)
+          git status
+          git diff --staged
+          git commit -m "docs: 自动更新 README [skip ci]" || echo "没有变更需要提交"
+          git push || echo "没有变更需要推送"
