@@ -1,0 +1,35 @@
+name: Deploy MkDocs
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/providers.json"
+      - "docs/**"
+      - "mkdocs.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+
+      - name: Update docs
+        run: |
+          mkdir -p docs
+          node .github/scripts/update-readme.js
+          cp README.md docs/index.md
+
+      - name: Deploy
+        run: mkdocs gh-deploy --force
