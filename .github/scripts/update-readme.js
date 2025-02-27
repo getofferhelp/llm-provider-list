@@ -4,6 +4,26 @@ try {
   // 读取数据
   const providersData = JSON.parse(fs.readFileSync('data/providers.json', 'utf8'));
   
+  // 生成供应商详细信息表格
+  const providerDetailsTable = providersData.providers.map(provider => {
+    const modelDetails = provider.models.map(model => `
+### ${model.name}
+- 模型ID: \`${model.id}\`
+- 上下文窗口: ${model.contextWindow.toLocaleString()} tokens
+- 价格:
+  - 输入: $${model.price.input}/1K tokens
+  - 输出: $${model.price.output}/1K tokens
+`).join('\n');
+
+    return `## ${provider.name}
+- API接口: \`${provider.apiBase}\`
+- API密钥获取: [点击这里](${provider.keyUrl})
+
+${modelDetails}
+---
+`;
+  }).join('\n');
+
   // 生成完整的 README 内容
   const readmeContent = `---
 layout: default
@@ -26,25 +46,43 @@ permalink: /
 ![GitHub last commit](https://img.shields.io/github/last-commit/getofferhelp/ai-provider-list)
 ![GitHub](https://img.shields.io/github/license/getofferhelp/ai-provider-list)
 
-## 📊 支持的供应商
+## 📊 供应商概览
 {: .d-inline-block }
 
 New
 {: .label .label-green }
 
-下面列出了目前支持的 AI 服务供应商及其模型信息。最后更新时间：${new Date().toISOString().split('T')[0]}
+下面列出了目前支持的 AI 服务供应商及其模型数量统计。最后更新时间：${new Date().toISOString().split('T')[0]}
 {: .fs-5 }
 
-| 供应商 | 支持的模型 |
-| :--- | :--- |
-${providersData.providers.map(p => `| **${p.name}** | ${p.models.map(m => `\`${m.name}\``).join(', ')} |`).join('\n')}
+| 供应商 | 模型数量 | 最大上下文窗口 | 最低价格(输入/输出) |
+| :--- | :---: | :---: | :--- |
+${providersData.providers.map(p => {
+  const maxContext = Math.max(...p.models.map(m => m.contextWindow));
+  const minPrice = Math.min(...p.models.map(m => m.price.input));
+  const minPriceOutput = Math.min(...p.models.map(m => m.price.output));
+  return `| **${p.name}** | ${p.models.length} | ${maxContext.toLocaleString()} | $${minPrice}/1K - $${minPriceOutput}/1K |`;
+}).join('\n')}
 {: .table-responsive }
+
+## 📑 详细供应商信息
+
+${providerDetailsTable}
 
 ## 🌟 特点
 
-- 实时更新的供应商信息
-- 包含详细的模型支持列表
+- 实时更新的供应商和模型信息
+- 详细的价格和性能参数
+- 直观的API接口信息
+- 完整的模型规格说明
 - 开源维护，社区驱动
+
+## 💡 选择建议
+
+- **高性能需求**: 推荐使用 Claude 3 Opus、GPT-4等大型模型
+- **性价比之选**: Mistral、Moonshot等价格较低的模型
+- **长文本处理**: 选择 Claude 3系列、GPT-4 Turbo等大上下文窗口模型
+- **成本敏感**: 可以考虑 DeepSeek、Moonshot等较经济的选择
 
 ## 🤝 如何贡献
 {: .d-inline-block }
