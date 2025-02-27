@@ -1,5 +1,5 @@
 {
-  "version": "2025-02-25",
+  "version": "2025-02-27",
   "providers": [
     {
       "id": "anthropic",
@@ -114,7 +114,70 @@
       "apiBase": "https://api.groq.com/v1/chat/completions",
       "models": [
         {
-          "id": "llama-3-3-70b-versatile",
+          "id": "deepseek-r1-distill-llama-70b",
+          "name": "DeepSeek R1 Distill LLaMA 70B",
+          "contextWindow": 8192,
+          "price": {
+            "input": 0.00075,
+            "output": 0.00099
+          }
+        },
+        {
+          "id": "deepseek-r1-distill-qwen-32b",
+          "name": "DeepSeek R1 Distill Qwen 32B",
+          "contextWindow": 128000,
+          "price": {
+            "input": 0.00069,
+            "output": 0.00069
+          }
+        },
+        {
+          "id": "qwen-2.5-32b-instruct",
+          "name": "Qwen 2.5 32B Instruct",
+          "contextWindow": 128000,
+          "price": {
+            "input": 0.00079,
+            "output": 0.00079
+          }
+        },
+        {
+          "id": "qwen-2.5-coder-32b-instruct",
+          "name": "Qwen 2.5 Coder 32B Instruct",
+          "contextWindow": 128000,
+          "price": {
+            "input": 0.00079,
+            "output": 0.00079
+          }
+        },
+        {
+          "id": "mistral-saba-24b",
+          "name": "Mistral Saba 24B",
+          "contextWindow": 8192,
+          "price": {
+            "input": 0.00079,
+            "output": 0.00079
+          }
+        },
+        {
+          "id": "llama-3.2-1b",
+          "name": "LLaMA 3.2 1B",
+          "contextWindow": 8192,
+          "price": {
+            "input": 0.00004,
+            "output": 0.00004
+          }
+        },
+        {
+          "id": "llama-3.2-3b",
+          "name": "LLaMA 3.2 3B",
+          "contextWindow": 8192,
+          "price": {
+            "input": 0.00006,
+            "output": 0.00006
+          }
+        },
+        {
+          "id": "llama-3.3-70b-versatile",
           "name": "LLaMA 3.3 70B Versatile",
           "contextWindow": 128000,
           "price": {
@@ -123,9 +186,27 @@
           }
         },
         {
-          "id": "llama-3-1-8b-instant",
+          "id": "llama-3.1-8b-instant",
           "name": "LLaMA 3.1 8B Instant",
           "contextWindow": 128000,
+          "price": {
+            "input": 0.00005,
+            "output": 0.00008
+          }
+        },
+        {
+          "id": "llama-3-70b",
+          "name": "LLaMA 3 70B",
+          "contextWindow": 8192,
+          "price": {
+            "input": 0.00059,
+            "output": 0.00079
+          }
+        },
+        {
+          "id": "llama-3-8b",
+          "name": "LLaMA 3 8B",
+          "contextWindow": 8192,
           "price": {
             "input": 0.00005,
             "output": 0.00008
@@ -156,6 +237,15 @@
           "price": {
             "input": 0.0002,
             "output": 0.0002
+          }
+        },
+        {
+          "id": "llama-3.3-70b-specdec",
+          "name": "LLaMA 3.3 70B SpecDec",
+          "contextWindow": 8192,
+          "price": {
+            "input": 0.00059,
+            "output": 0.00099
           }
         }
       ]
