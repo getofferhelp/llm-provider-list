@@ -6,7 +6,7 @@
 
 | 供应商 | 支持的模型 |
 | ------ | ---------- |
-| Caaaabbblaude | Claude 3 Opus, Claude 3 Sonnet, Claude 3 Haiku, Claude 2.1 |
+| Claude | Claude 3 Opus, Claude 3 Sonnet, Claude 3 Haiku, Claude 2.1 |
 | DeepSeek | DeepSeek Chat, DeepSeek Coder |
 | Gemini | Gemini Pro, Gemini Pro Vision, Gemini Ultra |
 | Groq | Mixtral 8x7B, LLaMA2 70B |
